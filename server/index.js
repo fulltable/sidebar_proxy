@@ -13,10 +13,10 @@ const db = require('../database/queries');
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/restaurants/:id', express.static(path.join(__dirname, '/../client/dist')));
+app.use('/restaurants/:id', express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req, res) => {
-  res.status(200).sendFile(path.resolve(__dirname, '../public/staticmap.jpg'));
+app.get('/loaderio-ceee423b880f1e8ac74dbd24e7a46500', (req, res) => {
+  res.status(200).sendFile(path.resolve(__dirname, '../public/loaderio-ceee423b880f1e8ac74dbd24e7a46500.txt'));
 })
 
 app.get('/api/restaurants/:id/info', (req, res) => {
