@@ -1,0 +1,43 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "author": "",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "react-dev": "webpack -d --watch",
+    "react": "webpack -p",
+    "server-dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "db:setup": "node database/seed.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-http-context": "^1.2.1",
+    "mongoose": "^5.4.21",
+    "newrelic": "^5.7.0",
+    "os": "^0.1.1",
+    "pg": "^7.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "eslint-plugin-react": "^7.12.4",
+    "faker": "^4.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
