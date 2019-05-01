@@ -89,7 +89,7 @@ const deleteRestaurant = (id, cb) => {
 }
 
 const getOverviewById = (id, cb) => {
-  pool.query('SELECT * FROM overview where _id = $1', [id],(error, results) => {
+pool.query('SELECT * FROM overview where _id = $1', [id],(error, results) => {
     if (error) {
       throw error
     }
