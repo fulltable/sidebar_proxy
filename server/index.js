@@ -15,8 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/restaurants/:id', express.static(path.join(__dirname, '../public')));
 
-app.get('/loaderio-ceee423b880f1e8ac74dbd24e7a46500', (req, res) => {
-  res.status(200).sendFile(path.resolve(__dirname, '../public/loaderio-ceee423b880f1e8ac74dbd24e7a46500.txt'));
+app.get('/loaderio-f85ee1539f9c2fd76c5cde67a21b01bd.txt', (req, res) => {
+  res.status(200).sendFile(path.resolve(__dirname, '../public/loaderio-f85ee1539f9c2fd76c5cde67a21b01bd.txt'));
 })
 
 app.get('/api/restaurants/:id/info', (req, res) => { 
